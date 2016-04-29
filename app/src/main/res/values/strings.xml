@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Difficult Intubation</string>
+    <string name="main_activity_greeting">Difficult Intubation</string>
+    <string name="start_scanner_button">Start Scan</string>
+</resources>
