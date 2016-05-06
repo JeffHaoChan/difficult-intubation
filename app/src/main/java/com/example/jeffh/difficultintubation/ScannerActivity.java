@@ -49,7 +49,8 @@ public class ScannerActivity extends AppCompatActivity {
         });
         barcodeDetector.setProcessor(new Detector.Processor<Barcode>() {
             @Override
-            public void release() {}
+            public void release() {
+            }
 
             @Override
             public void receiveDetections(Detector.Detections<Barcode> detections) {
@@ -62,14 +63,22 @@ public class ScannerActivity extends AppCompatActivity {
         startNewBarcodeSearch();
     }
 
+    @Override
     public void onResume() {
         super.onResume();
         startNewBarcodeSearch();
     }
 
+    @Override
     public void onPause() {
         super.onPause();
         stopNewBarcodeSearch();
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(ScannerActivity.this, MainActivity.class);
+        startActivity(intent);
     }
 
     private void startNewBarcodeSearch() {
@@ -86,7 +95,7 @@ public class ScannerActivity extends AppCompatActivity {
 
     private void displayDetectedBarcodeString(String barcodeString) {
         Intent intent = new Intent(ScannerActivity.this, DisplayDetectedBarcodeActivity.class);
-        intent.putExtra("PatientInfo", barcodeString);
+        intent.putExtra("BarcodeString", barcodeString);
         startActivity(intent);
     }
 }

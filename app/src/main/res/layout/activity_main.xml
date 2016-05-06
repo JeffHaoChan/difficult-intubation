@@ -9,21 +9,20 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.jeffh.difficultintubation.MainActivity">
 
+    <ImageView
+        android:id="@+id/icon_intubation_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/difficult_intubation_icon"
+        android:layout_centerInParent="true"/>
+
     <Button
         android:id="@+id/start_scanner_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_below="@id/icon_intubation_imageview"
+        android:layout_centerHorizontal="true"
         android:text="@string/start_scanner_button"
-        />
-
-    <TextView
-        android:id="@+id/greeting_text_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/start_scanner_button"
-        android:gravity="center"
-        android:text="@string/main_activity_greeting"
         />
 
 </RelativeLayout>

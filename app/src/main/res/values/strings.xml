@@ -2,4 +2,9 @@
     <string name="app_name">Difficult Intubation</string>
     <string name="main_activity_greeting">Difficult Intubation</string>
     <string name="start_scanner_button">Start Scan</string>
+    <string name="return_to_scanner_button">Return to Scanner</string>
+    <string name="detected_invalid_barcode">Invalid Barcode Detected!</string>
+    <string name="export_button">Export</string>
+    <string name="save_button">Save</string>
+    <string name="chooser_message">Export</string>
 </resources>
