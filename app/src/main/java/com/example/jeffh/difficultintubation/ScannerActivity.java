@@ -85,9 +85,7 @@ public class ScannerActivity extends AppCompatActivity {
         isSearchingForNewBarcode = true;
     }
 
-    private void stopNewBarcodeSearch() {
-        isSearchingForNewBarcode = false;
-    }
+    private void stopNewBarcodeSearch() { isSearchingForNewBarcode = false; }
 
     private boolean isSearchingForNewBarcode() {
         return isSearchingForNewBarcode;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.jeffh.difficultintubation.DisplayDetectedBarcodeActivity">
+    tools:context="com.example.jeffh.difficultintubation.ViewInformationActivity">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -16,25 +16,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
-                android:id="@+id/invalid_barcode_text_view"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/detected_invalid_barcode"
-                android:gravity="center"/>
-            <Button
-                android:id="@+id/return_to_scanner_activity_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/return_to_scanner_button"/>
-            <TextView
-                android:id="@+id/readable_decoded_barcode_text_view"
+                android:id="@+id/information_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <Button
-                android:id="@+id/export_button"
+                android:id="@+id/information_export_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/export_button"/>
-           </LinearLayout>
+            <Button
+                android:id="@+id/scan_new_code_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/scan_new_qr_code"/>
+        </LinearLayout>
     </ScrollView>
-</FrameLayout>
+</RelativeLayout>
